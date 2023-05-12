@@ -152,7 +152,7 @@ void print_tree(Node* root)
 	Queue q;
 	int height = calc_height(root);
 	int max = pow(2.0, height);
-	printf("\nmax = %d", max);
+	//printf("\nmax = %d", max);
 	int cnt = 1;
 	init_queue(&q);
 	enqueue(root, &q);
