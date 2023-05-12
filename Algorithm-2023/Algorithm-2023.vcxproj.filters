@@ -21,9 +21,18 @@
     <ClCompile Include="tree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

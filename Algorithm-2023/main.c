@@ -6,10 +6,6 @@
 
 int main(int argc,char* argv[])
 {
-	printf("Hellow World!\n");
-
-	Node* root = make_tree();
-	print_tree(root);
-
+	test_insert();
 	_getch();
 }
