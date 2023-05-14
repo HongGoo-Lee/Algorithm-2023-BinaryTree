@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 #include "tree.h"
 #include "queue.h"
-#include <math.h>
+
 Node* create_node(int val)
 {
 	Node* p = (Node*)malloc(sizeof(Node));
@@ -143,16 +144,16 @@ static int calc_height(Node* n)
 	return (hLeft > hRight) ? (hLeft + 1) : (hRight + 1);
 }
 
-// 이진트리 형식으로 출력하는 함수 (테스트 더 해봐야함)
+// 이진트리 형식으로 출력하는 함수
 void print_tree(Node* root)
 {
 	if (root == NULL)
 		return;
+	printf("\n\n");
 	Node* n;
 	Queue q;
 	int height = calc_height(root);
 	int max = pow(2.0, height);
-	//printf("\nmax = %d", max);
 	int cnt = 1;
 	init_queue(&q);
 	enqueue(root, &q);
@@ -164,7 +165,6 @@ void print_tree(Node* root)
 			printf("\n");
 			cnt *= 2;
 			temp = max / cnt;
-			//printf("temp = %d\n", temp);
 			for (int j = 0; j < temp; j++)
 				printf("\t");
 		}
