@@ -8,12 +8,7 @@ void test()
 {
 	Node* root = make_tree(), * n = NULL;
 	
-	printf("전위순회 방법: ");
-	print_tree_preorder(root);
-	printf("\n중위순회 방법: ");
-	print_tree_inorder(root);
-	printf("\n후위순회 방법: ");
-	print_tree_postorder(root);
+	print_tree_all(root);
 	n = findNode(root, 10);
 	if (n == NULL)
 		printf("\n해당하는 값을 가진 노드가 없습니다.\n");

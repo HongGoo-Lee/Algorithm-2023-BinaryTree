@@ -162,9 +162,16 @@ void print_tree(Node* root)
 	{
 		if (i == cnt)
 		{
-			printf("\n");
 			cnt *= 2;
-			temp = max / cnt;
+			temp = max / cnt - 1;
+			if (i == 1)
+			{
+				printf("\n");
+				for (int j = 0; j < temp-1; j++)
+					printf("\t");
+				printf("   이진 트리 출력");
+			}
+			printf("\n");
 			for (int j = 0; j < temp; j++)
 				printf("\t");
 		}
